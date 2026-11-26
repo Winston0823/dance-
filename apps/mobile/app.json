@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "DanceForm",
+    "slug": "danceform",
+    "version": "0.1.0",
+    "scheme": "danceform",
+    "orientation": "default",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "school.danceform.prototype",
+      "infoPlist": {
+        "NSAppTransportSecurity": { "NSAllowsLocalNetworking": true }
+      }
+    },
+    "android": {
+      "package": "school.danceform.prototype",
+      "usesCleartextTraffic": true
+    },
+    "plugins": [
+      "expo-screen-orientation",
+      "expo-secure-store",
+      [
+        "expo-audio",
+        {
+          "microphonePermission": false,
+          "recordAudioAndroid": false,
+          "enableBackgroundPlayback": false
+        }
+      ]
+    ]
+  }
+}

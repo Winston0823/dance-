@@ -1,0 +1,32 @@
+{
+  "name": "danceform",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "tsc --noEmit && vite build --config apps/web/vite.config.ts",
+    "start": "node apps/server/index.mjs",
+    "test": "node --test tests/*.test.mjs tests/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "mobile": "npm --prefix apps/mobile start",
+    "dataset:generate": "node scripts/generate-dataset.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "1.78.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "6.3.0",
+    "prettier": "^3.10.1",
+    "typescript": "^5.9.3",
+    "vite": "8.3.8"
+  }
+}

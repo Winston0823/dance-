@@ -1,0 +1,10 @@
+node_modules
+dist
+.data
+.npm-cache
+apps/mobile/node_modules
+apps/mobile/.expo
+package-lock.json
+apps/mobile/package-lock.json
+datasets/*.jsonl
+docs/design/image-prompts.json

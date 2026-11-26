@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.data/
+.npm-cache/
+.expo/
+.env
+.env.local
+test-results/
+playwright-report/
+*.log
+artifacts/
