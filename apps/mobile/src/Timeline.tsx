@@ -8,13 +8,13 @@ import {
 import { rulerBeat } from "./editing.ts";
 
 const T = {
-  background: "#20202a",
-  surface: "#292934",
-  line: "#464354",
-  ink: "#faf8ff",
-  muted: "#c2bbd1",
-  purple: "#a78bfa",
-  selected: "#7c3aed",
+  background: "#1b1b22",
+  surface: "#26262f",
+  line: "#3d3d48",
+  ink: "#fafafb",
+  muted: "#bdbdc8",
+  purple: "#e08a8a",
+  selected: "#990000",
 };
 type Props = {
   doc: ProjectDocument;
@@ -113,7 +113,7 @@ export default function Timeline({
                 {
                   left: section.startBeat * px,
                   width: (section.endBeat - section.startBeat) * px,
-                  backgroundColor: ["#a78bfa12", "#22d3ee0c", "#f472b60c"][
+                  backgroundColor: ["#e08a8a12", "#22d3ee0c", "#f472b60c"][
                     index % 3
                   ],
                 },
@@ -329,7 +329,7 @@ const s = StyleSheet.create({
     fontSize: 11,
     color: T.muted,
     borderLeftWidth: 1,
-    borderColor: "#777085",
+    borderColor: "#727283",
     paddingLeft: 6,
   },
   formation: {
@@ -338,10 +338,10 @@ const s = StyleSheet.create({
     height: 36,
     paddingHorizontal: 8,
     justifyContent: "center",
-    backgroundColor: "#443958",
+    backgroundColor: "#3b3b48",
     borderRadius: 5,
     borderWidth: 1,
-    borderColor: "#665181",
+    borderColor: "#626270",
   },
   selected: { backgroundColor: T.selected, borderColor: T.purple },
   formationText: { color: T.ink, fontSize: 11, fontWeight: "600" },
@@ -349,7 +349,7 @@ const s = StyleSheet.create({
     position: "absolute",
     top: 112,
     height: 20,
-    backgroundColor: "#4b3a6980",
+    backgroundColor: "#42425180",
     justifyContent: "center",
     paddingHorizontal: 4,
   },

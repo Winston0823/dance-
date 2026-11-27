@@ -1,17 +1,17 @@
 /** Presentation-only colors; never rewrite saved dancer identities or choreography. */
 export const UI_PALETTE = {
-  primary: "#7c3aed",
-  primaryHover: "#6d28d9",
-  ink: "#241b38",
-  muted: "#706680",
-  subtle: "#8b819b",
-  paper: "#faf9ff",
+  primary: "#990000",
+  primaryHover: "#7a0000",
+  ink: "#16161d",
+  muted: "#6b6b78",
+  subtle: "#8a8a96",
+  paper: "#f2f2f5",
   surface: "#ffffff",
-  surfaceMuted: "#f3effb",
-  selection: "#ede5ff",
-  line: "#e3dcef",
-  stage: "#f8f6fd",
-  grid: "#ded5ed",
+  surfaceMuted: "#f7f7f9",
+  selection: "#f7e6e6",
+  line: "#e2e2e8",
+  stage: "#fafafb",
+  grid: "#e4e4ea",
   risk: "#b45309",
   riskSurface: "#fff3db",
 } as const;
@@ -27,4 +27,4 @@ export const DANCER_PALETTE = [
   "#eab308",
 ] as const;
 
-export const SECTION_PALETTE = ["#ede5ff", "#e1f6ff", "#fce7f6"] as const;
+export const SECTION_PALETTE = ["#f7e6e6", "#e4edfb", "#fbf1dc"] as const;
